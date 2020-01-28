@@ -1,26 +1,21 @@
 package coupang;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Problem2 {
-    private static List<int[]> answerList;
     private int continueDay;
     private int maxSum;
     private int maxValue;
 
     static int[] set;
-    static int n;
     static int answer = 0;
 
     public int solution(int N, int M, int T, int K) { //총 N일, 총 M개, 연속된 T일, 합이 K개
         continueDay = T;
         maxSum = K;
         maxValue = M;
-
         set = new int[N];
-        n = N;
 
         nPir(0);
 
@@ -28,7 +23,7 @@ public class Problem2 {
     }
 
     public void nPir(int len) {// 중복순열
-        if (len == n) {
+        if (len == set.length) {
 
             if (Arrays.stream(set).sum() == maxValue && isSatisfiedTdaysSum(set)) {
                 answer++;
