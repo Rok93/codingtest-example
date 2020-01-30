@@ -2,6 +2,8 @@ package coupang;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -20,6 +22,10 @@ public class Problem1 {
         for (int i = min_position; i <= max_position; i += gap) {
             homeList.add(i);
         }
+//    모든 집 리스트 저장하는 방식 아래와 같이 만들 수 있었다!
+//        List<Integer> homeList = Stream.iterate(min_position, i -> i + gap)
+//                .limit(n)
+//                .collect(toList());
 
         List<Integer> answerList = homeList.stream()
                 .filter(a -> !positionsList.contains(a))

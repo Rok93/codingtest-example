@@ -1,7 +1,6 @@
 package coupang;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Problem2 {
     private int continueDay;
@@ -18,7 +17,6 @@ public class Problem2 {
         set = new int[N];
 
         nPir(0);
-
         return answer;
     }
 
@@ -68,13 +66,13 @@ public class Problem2 {
         int M2 = 7;
         int T2 = 2;
         int K2 = 4;
-//        System.out.println("2번정답: " + sol.solution(N2, M2, T2, K2)); // 28
+        System.out.println("2번정답: " + sol.solution(N2, M2, T2, K2)); // 28
 
         int N3 = 4;
         int M3 = 7;
         int T3 = 2;
         int K3 = 3;
-        System.out.println("3번정답: " + sol.solution(N3, M3, T3, K3)); // 0
+//        System.out.println("3번정답: " + sol.solution(N3, M3, T3, K3)); // 0
 
 
     }
