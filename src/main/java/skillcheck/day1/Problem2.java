@@ -17,18 +17,9 @@ public class Problem2 {
             return ZERO;
         }
 
-        while (n != ZERO) {
-            int maxValue = Arrays.stream(works)
-                    .max()
-                    .orElse(-1);
-
-            for (int i = 0; i < works.length; i++) {
-                if (works[i] == maxValue) {
-                    works[i]--;
-                    n--;
-                    break;
-                }
-            }
+        for (int i = 0; i < n; i++) {
+            Arrays.sort(works);
+            works[works.length - 1]--;
         }
         return getFatigability(works);
     }
