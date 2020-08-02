@@ -20,6 +20,5 @@ class Problem1Test {
 
         //then
         assertThat(answer).isEqualTo(new int[]{4, 1, 3, 0});
-
     }
 }

@@ -2,25 +2,38 @@ package p20200802;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 // 프로그래머스 고득전Kit 해시 --> 베스트앨범
 public class Problem1 {
     public int[] solution(String[] genres, int[] plays) {
         int genresLen = genres.length;
-        List<Music> musics = new ArrayList<>();
-        for (int i = 0; i < genresLen; i++) {
-            String genre = genres[i];
-            int play = plays[i];
-            musics.add(new Music(genre, play, i));
-        }
+        List<Music> musics = IntStream.range(0, genresLen)
+                .boxed()
+                .map(index -> new Music(genres[index], plays[index], index))
+                .collect(Collectors.toList());
 
         Map<String, Integer> playByGenre = musics.stream()
                 .collect(Collectors.groupingBy(Music::getGenre, Collectors.summingInt(Music::getPlay)));
 
-        List<Integer> sortedPlayCount = playByGenre.values().stream()
+        List<Integer> sortedPlayCount = sortPlays(playByGenre);
+
+        List<String> rankOfGenres = rankOfGenres(playByGenre, sortedPlayCount);
+
+        List<Integer> answer = rankPlaysByGenre(musics, rankOfGenres);
+
+        return answer.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+    }
+
+    private List<Integer> sortPlays(Map<String, Integer> playByGenre) {
+        return playByGenre.values().stream()
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
+    }
 
+    private List<String> rankOfGenres(Map<String, Integer> playByGenre, List<Integer> sortedPlayCount) {
         List<String> rankOfGenres = new ArrayList<>();
         for (int playCount : sortedPlayCount) {
             for (String key : playByGenre.keySet()) {
@@ -29,24 +42,15 @@ public class Problem1 {
                 }
             }
         }
+        return new ArrayList<>(rankOfGenres);
+    }
 
-        List<Integer> answer = new ArrayList<>();
+    private List<Integer> rankPlaysByGenre(List<Music> musics, List<String> rankOfGenres) {
+        ArrayList<Integer> answer = new ArrayList<>();
         for (String genre : rankOfGenres) {
             List<Music> collect = musics.stream()
                     .filter(music -> music.isEqualToGenre(genre))
-                    .sorted((music1, music2) -> {
-                        int music1Index = music1.getIndex();
-                        int music2Index = music2.getIndex();
-
-                        if (music1Index < music2Index)
-                            return 1;
-
-                        if (music1Index > music2Index) {
-                            return -1;
-                        }
-
-                        return 0;
-                    })
+                    .sorted((music1, music2) -> music2.getPlay() - music1.getPlay())
                     .limit(2)
                     .collect(Collectors.toList());
 
@@ -54,13 +58,10 @@ public class Problem1 {
                 answer.add(music.getIndex());
             }
         }
-
-        return answer.stream()
-                .mapToInt(Integer::intValue)
-                .toArray();
+        return new ArrayList<>(answer);
     }
 
-    public class Music implements Comparable {
+    public class Music {
         private String genre;
         private int play;
         private int index;
@@ -85,35 +86,6 @@ public class Problem1 {
 
         public boolean isEqualToGenre(String genre) {
             return this.genre.equals(genre);
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Music music = (Music) o;
-            return play == music.play &&
-                    Objects.equals(genre, music.genre);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(genre, play, index);
-        }
-
-        @Override
-        public int compareTo(Object o) {
-            Music music = (Music) o;
-
-            if (this.play < music.play) {
-                return 1;
-            }
-
-            if (this.play > music.play) {
-                return -1;
-            }
-
-            return 0;
         }
     }
 }
