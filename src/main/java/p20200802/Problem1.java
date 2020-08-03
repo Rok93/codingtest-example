@@ -50,7 +50,7 @@ public class Problem1 {
         for (String genre : rankOfGenres) {
             List<Music> collect = musics.stream()
                     .filter(music -> music.isEqualToGenre(genre))
-                    .sorted((music1, music2) -> music2.getPlay() - music1.getPlay())
+                    .sorted((music1, music2) -> music2.play - music1.play)
                     .limit(2)
                     .collect(Collectors.toList());
 
@@ -61,10 +61,15 @@ public class Problem1 {
         return new ArrayList<>(answer);
     }
 
-    public class Music {
+    public class Music implements Comparable<Music> {
         private String genre;
         private int play;
         private int index;
+
+        @Override
+        public int compareTo(Music other) {
+            return other.play - play;
+        }
 
         public Music(String genre, int play, int index) {
             this.genre = genre;
