@@ -1,5 +1,6 @@
 package woo2;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -28,11 +29,11 @@ public class Problem6 {
 
         return answer.stream()
                 .map(Crew::getEmail)
-                .sorted()
+                .sorted(Comparator.naturalOrder())
                 .toArray(String[]::new);
     }
 
-    public class Crew {
+    public class Crew implements Comparable<Crew> {
         public static final int SUBSTRING_NUMBER = 2;
 
         private final String email;
@@ -61,6 +62,18 @@ public class Problem6 {
                 }
             }
             return false;
+        }
+
+        @Override
+        public int compareTo(Crew o) {
+            return extractInt(email) - extractInt(o.email);
+        }
+
+        int extractInt(String s) {
+            String num = s.replaceAll("\\D", "");
+            System.out.println(num);
+            // return 0 if no digits found
+            return num.isEmpty() ? 0 : Integer.parseInt(num);
         }
     }
 }

@@ -47,10 +47,10 @@ public class Problem1_2 {
         Set<Map.Entry<String, List<Music>>> entries = IntStream.range(0, length)
                 .mapToObj(index -> new Music(genres[index], plays[index], index))
                 .collect(Collectors.groupingBy(Music::getGenre))
-                .entrySet(); // 이어서 작성할 수 있지만, 이렇게 이해하기 쉽게 쪼갰음
+                .entrySet();
 
         return entries.stream()
-                .sorted((a, b) -> sum(b.getValue()) - sum(a.getValue()))
+                .sorted((a, b) -> sum(b.getValue()) - sum(a.getValue())) // genre 순서 정하기
                 .flatMap(musics -> musics.getValue().stream().sorted().limit(2))
                 .mapToInt(Music::getIndex).toArray();
     }
