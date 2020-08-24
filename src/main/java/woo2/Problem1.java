@@ -3,10 +3,9 @@ package woo2;
 import java.util.Arrays;
 
 public class Problem1 {
-
-    public static final int X_COORDINATE = 0;
-    public static final int Y_COORDINATE = 1;
-    public static final int DISTANCE_COMPARE_NUMBER = 0; // 변수명... 맘에 안듦
+    private static final int X_COORDINATE = 0;
+    private static final int Y_COORDINATE = 1;
+    private static final int DISTANCE_COMPARE_NUMBER = 0; // 변수명... 맘에 안듦
 
     public int solution(int[] restaurant, int[][] riders, int k) {
         return (int) Arrays.stream(riders)
