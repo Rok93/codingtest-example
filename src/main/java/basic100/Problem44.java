@@ -7,6 +7,6 @@ public class Problem44 {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
 
-        System.out.printf("%d", input<<1);
+        System.out.printf("%d", input << 1);
     }
 }

@@ -7,6 +7,6 @@ public class Problem18 {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
-        System.out.println(input.replace("-",""));
+        System.out.println(input.replace("-", ""));
     }
 }

@@ -25,6 +25,6 @@ public class Problem3 {
             }
             lange++;
         }
-        return new int[] {1, gems.length};
+        return new int[]{1, gems.length};
     }
 }

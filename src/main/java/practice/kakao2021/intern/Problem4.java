@@ -3,7 +3,7 @@ package practice.kakao2021.intern;
 import java.util.HashMap;
 
 public class Problem4 {
-//    public long[] solution(long k, long[] room_number) {
+    //    public long[] solution(long k, long[] room_number) {
 //        int roomNumberLength = room_number.length;
 //        long[] answer = new long[roomNumberLength];
 //        boolean[] checkIn = new boolean[(int) (k + 1)];
@@ -44,7 +44,7 @@ public class Problem4 {
 //    }
 
     public long getParent2(long a) {
-        if(!m.containsKey(a)) {
+        if (!m.containsKey(a)) {
             m.put(a, a + 1);
             return a;
         }

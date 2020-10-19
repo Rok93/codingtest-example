@@ -15,7 +15,7 @@ public class Problem7 {
 
 
         for (int i = 3; i < n; i++) {
-            int[] temp = new int[getSize(i+1)];
+            int[] temp = new int[getSize(i + 1)];
 
             getNextArray(answerList, i, temp);
             answerList.add(temp);

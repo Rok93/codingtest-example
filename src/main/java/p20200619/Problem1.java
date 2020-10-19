@@ -1,6 +1,8 @@
 package p20200619;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Problem1 {
     public static void main(String[] args) {

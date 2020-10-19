@@ -1,6 +1,6 @@
 package skillcheck.day1;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * 회사원 Demi는 가끔은 야근을 하는데요, 야근을 하면 야근 피로도가 쌓입니다.

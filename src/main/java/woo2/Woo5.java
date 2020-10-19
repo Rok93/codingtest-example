@@ -68,55 +68,55 @@ public class Woo5 {
                 check = true;
             } else {
                 check = false;
-                answer = new int[] {-1};
+                answer = new int[]{-1};
                 break;
             }
             if (history[i].split("\\.")[1].equals("0") || history[i].split("\\.")[1].equals("5")) {
                 check = true;
             } else {
                 check = false;
-                answer = new int[] {-1};
+                answer = new int[]{-1};
                 break;
             }
             int amount = 0;
             double eat = Double.parseDouble(history[i]);
             if (stock.getPorkFeet() < 4 * eat) {
                 amount = amount + 10000;
-                stock.setPorkFeet(stock.getPorkFeet() + 10 - (int)(4 * eat));
+                stock.setPorkFeet(stock.getPorkFeet() + 10 - (int) (4 * eat));
             } else {
-                stock.setPorkFeet(stock.getPorkFeet() - (int)(4 * eat));
+                stock.setPorkFeet(stock.getPorkFeet() - (int) (4 * eat));
             }
             if (stock.getOnion() < 50 * eat) {
                 amount = amount + 3000;
-                stock.setOnion(stock.getOnion() + 100 - (int)(50 * eat));
+                stock.setOnion(stock.getOnion() + 100 - (int) (50 * eat));
             } else {
-                stock.setOnion(stock.getOnion() - (int)(50 * eat));
+                stock.setOnion(stock.getOnion() - (int) (50 * eat));
             }
             if (stock.getGreenOnion() < 10 * eat) {
                 amount = amount + 1000;
-                stock.setGreenOnion(stock.getGreenOnion() + 30 - (int)(10 * eat));
+                stock.setGreenOnion(stock.getGreenOnion() + 30 - (int) (10 * eat));
             } else {
-                stock.setGreenOnion(stock.getGreenOnion() - (int)(10 * eat));
+                stock.setGreenOnion(stock.getGreenOnion() - (int) (10 * eat));
             }
             if (stock.getGarlic() < 10 * eat) {
                 amount = amount + 2000;
-                stock.setGarlic(stock.getGarlic() + 50 - (int)(10 * eat));
+                stock.setGarlic(stock.getGarlic() + 50 - (int) (10 * eat));
             } else {
-                stock.setGarlic(stock.getGarlic() - (int)(10 * eat));
+                stock.setGarlic(stock.getGarlic() - (int) (10 * eat));
             }
             if (history[i].split("\\.")[1].equals("0")) {
                 if (stock.getPepper() < 4 * eat) {
                     amount = amount + 1000;
-                    stock.setPepper((stock.getPepper() + 10 - (int)(4 * eat)));
+                    stock.setPepper((stock.getPepper() + 10 - (int) (4 * eat)));
                 } else {
-                    stock.setPepper((stock.getPepper() - (int)(4 * eat)));
+                    stock.setPepper((stock.getPepper() - (int) (4 * eat)));
                 }
             } else {
                 if (stock.getPepper() < 2 * eat) {
                     amount = amount + 1000;
-                    stock.setPepper((stock.getPepper() + 10 - (int)(2 * eat)));
+                    stock.setPepper((stock.getPepper() + 10 - (int) (2 * eat)));
                 } else {
-                    stock.setPepper((stock.getPepper() - (int)(2 * eat)));
+                    stock.setPepper((stock.getPepper() - (int) (2 * eat)));
                 }
             }
 
@@ -127,7 +127,7 @@ public class Woo5 {
         if (check) {
             return answer;
         } else {
-            return new int[] {-1};
+            return new int[]{-1};
         }
 
     }

@@ -1,6 +1,9 @@
 package p20200529;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Study2 {
     public static int degree;

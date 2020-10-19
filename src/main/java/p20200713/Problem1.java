@@ -11,7 +11,7 @@ public class Problem1 {
             String[] inputs = sc.nextLine().split(" ");
             int a = Integer.parseInt(inputs[0]);
             int b = Integer.parseInt(inputs[1]);
-            System.out.println(pow(a,b));
+            System.out.println(pow(a, b));
         }
     }
 

@@ -1,6 +1,8 @@
 package n20200605;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Study1 {
     public static void main(String[] args) {

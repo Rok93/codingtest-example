@@ -12,6 +12,6 @@ public class Problem42 {
         System.out.println(input1 * input2);
         System.out.println(input1 / input2);
         System.out.println(input1 % input2);
-        System.out.printf("%.2f", (double)input1 / input2);
+        System.out.printf("%.2f", (double) input1 / input2);
     }
 }

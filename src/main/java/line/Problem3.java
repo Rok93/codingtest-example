@@ -15,8 +15,6 @@ public class Problem3 {
         }
 
 
-
-
         return answer;
     }
 

@@ -1,7 +1,6 @@
 package p20200626;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class Problem5 {

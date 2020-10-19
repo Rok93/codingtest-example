@@ -1,6 +1,5 @@
 package p20200612;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Study2 {

@@ -9,7 +9,7 @@ public class Study3 {
         int tryNumber = sc.nextInt();
 
         for (int i = 0; i < tryNumber; i++) {
-            String temp =  sc.next();
+            String temp = sc.next();
             isRight(temp);
         }
     }

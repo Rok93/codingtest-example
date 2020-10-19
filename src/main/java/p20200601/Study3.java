@@ -1,6 +1,7 @@
 package p20200601;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Study3 {
     public static void main(String[] args) {

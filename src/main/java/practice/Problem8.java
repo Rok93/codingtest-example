@@ -1,7 +1,5 @@
 package practice;
 
-import java.util.Arrays;
-
 //DFS의 느낌이 든다. 깊게 깊게 (피타고라스)
 public class Problem8 {
     public int solution(int n) {

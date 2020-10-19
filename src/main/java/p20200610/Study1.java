@@ -1,7 +1,9 @@
 package p20200610;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class Study1 {
     private static List<int[]> answerList;

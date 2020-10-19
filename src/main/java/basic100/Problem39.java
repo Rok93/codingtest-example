@@ -7,7 +7,7 @@ public class Problem39 {
         Scanner sc = new Scanner(System.in);
         long a = sc.nextLong();
         long b = sc.nextLong();
-        int result = (int)(a / b);
+        int result = (int) (a / b);
         System.out.println(result);
     }
 }

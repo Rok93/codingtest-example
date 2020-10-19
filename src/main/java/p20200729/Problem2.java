@@ -15,6 +15,8 @@ public class Problem2 {
                 changingStatus = true;
             }
 
+//            int aa = new BigDecimal(10).divide(new BigDecimal(3), RoundingMode.UP).intValue();
+
             if (input.contains("()")) {
                 input.replaceAll("\\(\\)", "");
                 changingStatus = true;

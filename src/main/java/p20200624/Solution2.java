@@ -18,7 +18,7 @@ public class Solution2 {
             T[i] = sc.nextInt();
             P[i] = sc.nextInt();
         }
-        dfs(0,0);
+        dfs(0, 0);
         System.out.println(answer);
     }
 

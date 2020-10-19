@@ -11,12 +11,12 @@ public class Study1 {
         fibonacciNumbers[1] = 1;
 
         for (int i = 2; i < 41; i++) {
-            fibonacciNumbers[i] = fibonacciNumbers[i-1] + fibonacciNumbers[i - 2];
+            fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
         }
 
         int tryNumber = sc.nextInt();
 
-        for (int i = 0; i < tryNumber; i++ ) {
+        for (int i = 0; i < tryNumber; i++) {
             int input = sc.nextInt();
             if (input == 0) {
                 System.out.println(1 + " " + 0);
@@ -27,7 +27,7 @@ public class Study1 {
                 System.out.println(0 + " " + 1);
                 continue;
             }
-            System.out.println(fibonacciNumbers[input-1] + " " + fibonacciNumbers[input]);
+            System.out.println(fibonacciNumbers[input - 1] + " " + fibonacciNumbers[input]);
         }
     }
 }

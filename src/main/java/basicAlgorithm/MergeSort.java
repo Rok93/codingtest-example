@@ -35,7 +35,7 @@ public class MergeSort {
             tmp[idx++] = src[q++];
         }
 
-        for (int i = start; i <= end; i++ ) {
+        for (int i = start; i <= end; i++) {
             src[i] = tmp[i];
         }
     }

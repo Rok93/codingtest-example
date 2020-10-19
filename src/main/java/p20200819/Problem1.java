@@ -26,7 +26,7 @@ public class Problem1 {
                 .filter(reserveStd -> !selfLoans.contains(reserveStd))
                 .collect(Collectors.toList());
 
-         int answer = n - lostStds.size();
+        int answer = n - lostStds.size();
 
         for (int lostStd : lostStds) {
             if (lostStd > 1) {

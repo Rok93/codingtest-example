@@ -1,6 +1,8 @@
 package p20200823.socar;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class SocarProblem3 {
     private int timeLimit;

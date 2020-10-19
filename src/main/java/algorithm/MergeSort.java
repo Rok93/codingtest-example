@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class MergeSort {
     static int[] buff;
+
     // a[left] ~ a[right]를 재귀적으로 병합 정렬
     static void __mergeSort(int[] a, int left, int right) {
         if (left < right) {
@@ -20,11 +21,11 @@ public class MergeSort {
                 buff[p++] = a[i];
             }
 
-            while(i <= right && j < p) {
+            while (i <= right && j < p) {
                 a[k++] = (buff[j] <= a[i]) ? buff[j++] : a[i++];
             }
 
-            while(j < p) {
+            while (j < p) {
                 a[k++] = buff[j++];
             }
         }

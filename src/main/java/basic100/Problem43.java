@@ -12,10 +12,10 @@ public class Problem43 {
         long a = Long.parseLong(list[0]);
         long b = Long.parseLong(list[1]);
         long c = Long.parseLong(list[2]);
-        double average = ((double)(a + b + c) / 3);
+        double average = ((double) (a + b + c) / 3);
         long sum = a + b + c;
 
         System.out.println(sum);
-        System.out.printf("%.1f" ,average);
+        System.out.printf("%.1f", average);
     }
 }

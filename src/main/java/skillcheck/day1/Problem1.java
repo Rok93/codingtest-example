@@ -27,10 +27,10 @@ public class Problem1 {
         }
 
         for (int i = 0; i < NEXT_STEP.length; i++) { //재귀의 문제 너무 깊어지면 이렇다..
-            if(sum < NEXT_STEP[i]) {
+            if (sum < NEXT_STEP[i]) {
                 break;
             }
-                getSolution(sum - NEXT_STEP[i]);
+            getSolution(sum - NEXT_STEP[i]);
         }
     }
 

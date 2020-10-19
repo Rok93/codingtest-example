@@ -31,14 +31,14 @@ public class Problem3 {
             int biggerMax = 0;
             int lowerMin = 0;
             for (int i = 0; i < gapList.size(); i++) {
-                
+
                 if (gapList.get(i).equals(maxGap)) {
-                    biggerMax = gapList.get(i) > gapList.get(i+1) ? gapList.get(i) : gapList.get(i+1);
+                    biggerMax = gapList.get(i) > gapList.get(i + 1) ? gapList.get(i) : gapList.get(i + 1);
                     continue;
                 }
 
                 if (gapList.get(i).equals(minGap)) {
-                    lowerMin = gapList.get(i) < gapList.get(i+1) ? gapList.get(i) : gapList.get(i+1);
+                    lowerMin = gapList.get(i) < gapList.get(i + 1) ? gapList.get(i) : gapList.get(i + 1);
                 }
             }
             int temp = numbers[biggerMax];

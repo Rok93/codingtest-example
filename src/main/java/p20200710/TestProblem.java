@@ -1,7 +1,6 @@
 package p20200710;
 
-import java.util.*;
-import java.util.stream.*;
+import java.util.Scanner;
 
 public class TestProblem {
     private int cnt = 0;

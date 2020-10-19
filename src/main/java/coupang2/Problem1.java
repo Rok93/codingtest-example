@@ -1,7 +1,6 @@
 package coupang2;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class Problem1 {
     public int solution(int n) {

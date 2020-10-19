@@ -7,6 +7,6 @@ public class Problem45 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.printf("%d",(a * 1<<b));
+        System.out.printf("%d", (a * 1 << b));
     }
 }

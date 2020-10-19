@@ -1,7 +1,6 @@
 package p20200622;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -72,6 +71,7 @@ public class Solution1 {
         combination(comArr, n, r - 1, index + 1, target + 1);//뽑는경우
         combination(comArr, n, r, index, target + 1);//안뽑는경우
     }
+
     private static int twoInvolution(int cnt) {
         if (cnt == 0) {
             return 1;

@@ -13,7 +13,7 @@ public class Problem1 {
         for (int i = 0; i < testCaseNumber; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
-            System.out.println(calculateRestOfAPowB(a,b));
+            System.out.println(calculateRestOfAPowB(a, b));
         }
     }
 

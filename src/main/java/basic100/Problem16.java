@@ -10,6 +10,6 @@ public class Problem16 {
         String hour = input.split(":")[0];
         String min = input.split(":")[1];
 
-        System.out.printf("%s:%s",hour,min);
+        System.out.printf("%s:%s", hour, min);
     }
 }

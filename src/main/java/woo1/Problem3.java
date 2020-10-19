@@ -20,11 +20,11 @@ public class Problem3 {
 
     private char translateChar(char c) {
         if ('a' <= c && c <= 'z') { // 알파벳 총 26개
-            return (char)(ALPHABET_TOTAL_NUMBER + ALPHABET_SMALL_LETTER_BASE - (c - ALPHABET_SMALL_LETTER_BASE) - 1);
+            return (char) (ALPHABET_TOTAL_NUMBER + ALPHABET_SMALL_LETTER_BASE - (c - ALPHABET_SMALL_LETTER_BASE) - 1);
         }
 
         if ('A' <= c && c <= 'Z') {
-            return (char)(ALPHABET_TOTAL_NUMBER + ALPHABET_LARGE_LETTER_BASE - (c - ALPHABET_LARGE_LETTER_BASE) - 1);
+            return (char) (ALPHABET_TOTAL_NUMBER + ALPHABET_LARGE_LETTER_BASE - (c - ALPHABET_LARGE_LETTER_BASE) - 1);
         }
 
         return c;

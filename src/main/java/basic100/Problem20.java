@@ -7,7 +7,7 @@ public class Problem20 {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         char[] charList;
-        if(input.length() > 2001) {
+        if (input.length() > 2001) {
             charList = new char[2001];
         } else {
             charList = new char[input.length()];
