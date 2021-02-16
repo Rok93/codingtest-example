@@ -1,0 +1,10 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü²ëåûÿÿÿÿ
+@
+java:S5411"*Use the primitive boolean expression here.(ÉÝ«ã
+c
+java:S5361A"HReplace this call to "replaceAll()" by a call to the "replace()" method.(†ÀªÈüÿÿÿÿ
+J
+java:S1066"/Merge this if statement with the enclosing one.(šžš‡ýÿÿÿÿ
+^
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(½Œ‡Ý

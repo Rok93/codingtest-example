@@ -1,0 +1,13 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ã»‹ÿÿÿÿÿ
+R
+java:S3655!"7Call "Optional#isPresent()" before accessing the value.(ıç¹Ÿıÿÿÿÿ
+D
+java:S1068	")Remove this unused "graph" private field.(±ëï»ÿÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+v
+java:S1450"[Remove the "scoresLength" field and declare it as a local variable in the relevant methods.(Êêüüÿÿÿÿ
+Q	java:S1257"<This block of commented-out lines of code should be removed.(“§”Å
+o
+java:S1450	"TRemove the "graph" field and declare it as a local variable in the relevant methods.(±ëï»ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
