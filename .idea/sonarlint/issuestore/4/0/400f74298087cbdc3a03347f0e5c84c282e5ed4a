@@ -1,0 +1,15 @@
+
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(•äÀÖÿÿÿÿÿ8·ıÕÜú.
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8‰÷ÔÜú.
+X	java:S125"<This block of commented-out lines of code should be removed.(şÙ“8‰÷ÔÜú.
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(ÅÓ¶Ä8šÏğÛú.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(…íÔ8œ¡ÍÛú.
+K
+java:S1144".Remove this unused private "playRound" method.(Äîõ8‰÷ÔÜú.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ªÅµŒÿÿÿÿÿ8«ÅóÛú.
+n
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(…íÔ8ÓüÏÛú.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(°”Ç¥üÿÿÿÿ8×ŞĞÛú.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(•äÀÖÿÿÿÿÿ8‰÷ÔÜú.

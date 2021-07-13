@@ -1,0 +1,14 @@
+
+s	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(øšÖùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õç³Ïûÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'netscape.javascript.JSUtil'.(úìÎÿÿÿÿÿ
+S
+java:S1172"8Remove this unused method parameter "numOfQuickPlayers".(ıàÌÆøÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(¨í§¾ıÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(˜Õ®´üÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(Ûèö¡
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ÈòÃóÿÿÿÿÿ
+O
+java:S11728"4Remove this unused method parameter "currentTagger".(µÒıÊûÿÿÿÿ
+Q	java:S125C"<This block of commented-out lines of code should be removed.(½ş²Ñ

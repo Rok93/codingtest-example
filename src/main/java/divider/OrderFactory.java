@@ -3,6 +3,7 @@ package divider;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -18,9 +19,11 @@ public class OrderFactory {
         int membersNumber = distinctMembers.size();
         System.out.printf("사회자(=로키)를 제외한 총인원은 %d명 입니다. \n" , membersNumber);
 
-        for (int round = 1; round <= 3 ; round++) {
-            playRound(round, membersNumber);
-        }
+        System.out.println((int) (1 + Math.random() * 12));
+
+//        for (int round = 1; round <= 3 ; round++) {
+//            playRound(round, membersNumber);
+//        }
     }
 
     private static void playRound(int round, int membersNumber) {

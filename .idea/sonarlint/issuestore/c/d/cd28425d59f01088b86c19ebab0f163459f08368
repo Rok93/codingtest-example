@@ -1,0 +1,10 @@
+
+E
+java:S3740-"/Provide the parametrized type for this generic.(ºúÕ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¯ÿşøÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¯ÿşøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ù–
+B
+java:S1612",Replace this lambda with a method reference.(‹ Á’
+t
+java:S1210d"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ø¢ñ”şÿÿÿÿ

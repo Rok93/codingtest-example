@@ -1,0 +1,18 @@
+
+Y
+java:S1155*">Use isEmpty() to check whether the collection is empty or not.(½©½õþÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øº›Ä
+y
+java:S1488."^Immediately return this expression instead of assigning it to the temporary variable "answer".(¯¡à¢ùÿÿÿÿ
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¨¦Ýq
+W
+java:S1126C"AReplace this if-then-else statement by a single return statement.(ÿ«²·
+_
+java:S2153V"IRemove the boxing to "Integer"; The argument is already of the same type.(×™°¤
+7
+java:S2129V"!Remove this "Integer" constructor(×™°¤
+_
+java:S2153W"IRemove the boxing to "Integer"; The argument is already of the same type.(¤µá„
+7
+java:S2129W"!Remove this "Integer" constructor(¤µá„

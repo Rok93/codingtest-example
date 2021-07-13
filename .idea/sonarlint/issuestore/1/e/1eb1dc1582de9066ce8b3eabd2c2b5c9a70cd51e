@@ -1,0 +1,19 @@
+
+2
+java:S1643("Use a StringBuilder instead.(ËÇÀ³
+7
+java:S1643`"Use a StringBuilder instead.(¨˜†‹ÿÿÿÿÿ
+2
+java:S1643l"Use a StringBuilder instead.(é¡²Ø
+2
+java:S1643~"Use a StringBuilder instead.(Öþ¯Ä
+8
+java:S1643Ž"Use a StringBuilder instead.(±Î¢»ÿÿÿÿÿ
+m	java:S127)"XRefactor the code in order to not assign to this loop counter from within the loop body.( ’¹Õ
+s	java:S135%"YReduce the total number of break and continue statements in this loop to use at most one.(Ó‘ úÿÿÿÿ
+Y
+java:S11550">Use isEmpty() to check whether the collection is empty or not.(è×öÆúÿÿÿÿ
+h
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ÛîÎ½
+7
+java:S2129"!Remove this "Integer" constructor(Öâ‚ñ
